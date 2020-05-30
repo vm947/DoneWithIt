@@ -23,6 +23,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "A market place for selling the stuff you don't need, practice.",
+    "githubUrl": "https://github.com/vm947/DoneWithIt"
   }
 }

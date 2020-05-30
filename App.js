@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from "react-native";
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>I Love You Monkey, You are the best!</Text>
+      <Text>I Love You Monkey!! You are the best!</Text>
     </View>
   );
 }
