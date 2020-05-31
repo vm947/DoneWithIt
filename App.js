@@ -8,6 +8,8 @@ import {
   SafeAreaView,
   Alert,
   Button,
+  StatusBar,
+  Platform,
 } from "react-native";
 
 export default function App() {
@@ -17,7 +19,10 @@ export default function App() {
         color="purple"
         title="Click Me"
         onPress={() =>
-          Alert.prompt("My Title", "My Message", (text) => console.log(text))
+          Alert.alert("My title", "My message", [
+            { text: "yes", onPress: () => console.log("Yes") },
+            { text: "no", onPress: () => console.log("no") },
+          ])
         }
       />
     </SafeAreaView>
@@ -27,8 +32,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    justifyContent: "center",
-    alignItems: "center",
+    backgroundColor: "dodgerblue",
+    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
   },
 });
