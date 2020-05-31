@@ -4,22 +4,22 @@ import {
   Text,
   TouchableNativeFeedback,
   Image,
+  View,
   SafeAreaView,
+  Alert,
+  Button,
 } from "react-native";
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Text>I Love You Monkey!! You are the best!</Text>
-      <TouchableNativeFeedback onPress={() => console.log("Image tapped!")}>
-        <Image
-          source={{
-            width: 200,
-            height: 300,
-            uri: "https://picsum.photos/id/1/200/300",
-          }}
-        />
-      </TouchableNativeFeedback>
+      <Button
+        color="purple"
+        title="Click Me"
+        onPress={() =>
+          Alert.prompt("My Title", "My Message", (text) => console.log(text))
+        }
+      />
     </SafeAreaView>
   );
 }
