@@ -25,25 +25,41 @@ export default function App() {
       style={{
         backgroundColor: "#fff",
         flex: 1,
-        flexDirection: 'row'
+        flexDirection: "row",
+        justifyContent: "center",
+        alignItems: "center",
+        // flexWrap: 'wrap',
+        // alignContent: 'center'
+        //alignItems aligns in the LINE
+        //alignContent works only with flexWrap
+        //alignContent works based on page
       }}
     >
-      <View style={{
-        backgroundColor: 'dodgerblue',
-        width: 100,
-        height: 100
-      }}/>
-      <View style={{
-        backgroundColor: 'gold',
-        width: 100,
-        height: 100
-      }}/>
-      <View style={{
-        backgroundColor: 'tomato',
-        width: 100,
-        height: 100
-      }}/>
-
+      <View
+        style={{
+          backgroundColor: "dodgerblue",
+          width: 100,
+          height: 100,
+        }}
+      />
+      <View
+        style={{
+          backgroundColor: "gold",
+          width: 100,
+          height: 100,
+          top: 20,
+          left: 20,
+          position: 'relative'
+          //all components have default relative position
+        }}
+      />
+      <View
+        style={{
+          backgroundColor: "tomato",
+          width: 100,
+          height: 100,
+        }}
+      />
     </View>
   );
 }
