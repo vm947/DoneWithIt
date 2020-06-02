@@ -5,8 +5,9 @@ import ViewImageScreen from "./app/screens/ViewImageScreen";
 import Borders from './practice/Borders';
 import Shadows from './practice/Shadows';
 import PaddingAndMargin from './practice/PaddingAndMargin';
-import StyleText from './practice/StyleText'
+import StyleText from './practice/StyleText';
+import Icons from './practice/Icons';
 
 export default function App() {
-  return <StyleText />;
+  return <Icons />;
 }
