@@ -2,7 +2,7 @@ import React from "react";
 import { View } from "react-native";
 import WelcomeScreen from "./app/screens/WelcomeScreen";
 import ViewImageScreen from "./app/screens/ViewImageScreen";
-import AppButton from './componenets/AppButton';
+import AppButton from "./componenets/AppButton";
 
 export default function App() {
   return (
@@ -13,7 +13,7 @@ export default function App() {
         alignItems: "center",
       }}
     >
-      <AppButton title="Login" />
+      <AppButton title="Login" onPress={() => console.log("tapped")} />
     </View>
   );
 }
