@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text } from "react-native";
 
-import AppText from "./AppText";
+import AppText from "../componenets/AppText";
 
 export default function StyleText() {
   return (

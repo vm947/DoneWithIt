@@ -10,7 +10,7 @@ function WelcomeScreen(props) {
       <View style={styles.logoContainer}>
         <Image style={styles.logo} source={require("../assets/logo-red.png")} />
       </View>
-        <Text style={styles.text}>Sell What You Don't Need</Text>
+      <Text style={styles.text}>Sell What You Don't Need</Text>
       <View style={styles.loginButton}></View>
       <View style={styles.registerButton}></View>
     </ImageBackground>
@@ -37,11 +37,11 @@ const styles = StyleSheet.create({
   logoContainer: {
     position: "absolute",
     top: 70,
-    alignItems: 'center',
+    alignItems: "center",
   },
-  text:{
+  text: {
     position: "absolute",
-    bottom: 400
+    bottom: 400,
   },
   registerButton: {
     width: "100%",
