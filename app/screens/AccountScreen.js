@@ -5,6 +5,7 @@ import Screen from "../../componenets/Screen";
 import ListItem from "../../componenets/ListItem";
 import ImageFolder from "../../UrlImages/Me";
 import Icon from "../../componenets/Icon";
+import ListItemSeperatorComponent from "../../componenets/ListItemSeperator";
 
 import colors from "../config/color";
 
@@ -31,7 +32,7 @@ const menuItems = [
 
 function AccountScreen(props) {
   return (
-    <Screen>
+    <Screen style={styles.screen}>
       <View style={styles.container}>
         <ListItem
           title="Vincent Merrone"
@@ -43,10 +44,11 @@ function AccountScreen(props) {
         <FlatList
           data={menuItems}
           keyExtractor={(menuItem) => menuItem.title}
+          ItemSeparatorComponent={ListItemSeperatorComponent}
           renderItem={({ item }) => (
             <ListItem
               title={item.title}
-              ImageComponent={
+              IconComponent={
                 <Icon
                   name={item.icon.name}
                   backgroundColor={item.icon.backgroundColor}
@@ -56,6 +58,10 @@ function AccountScreen(props) {
           )}
         ></FlatList>
       </View>
+      <ListItem
+        title="Log Out"
+        IconComponent={<Icon name="logout" backgroundColor="#ffe66d" />}
+      />
     </Screen>
   );
 }
@@ -63,6 +69,9 @@ function AccountScreen(props) {
 const styles = StyleSheet.create({
   container: {
     marginVertical: 20,
+  },
+  screen: {
+    backgroundColor: colors.light,
   },
 });
 
