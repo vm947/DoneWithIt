@@ -11,6 +11,7 @@ import ImageFolder from '../../UrlImages/Me';
 
 import ListItem from "../../componenets/ListItem";
 import ListItemSeperator from "../../componenets/ListItemSeperator";
+import ListItemDeleteAction from "../../componenets/ListItemDeleteAction";
 
 let Image_Http_URL = {
   uri: ImageFolder.ImageMe,
@@ -43,6 +44,7 @@ function MessagesScreen(props) {
             subTitle={item.description}
             image={item.image}
             onPress ={() => console.log("Message selected", item)}
+            renderRightActions ={ListItemDeleteAction}
           />
         )}
         ItemSeparatorComponent ={ListItemSeperator}
