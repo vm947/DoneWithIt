@@ -4,7 +4,6 @@ import { View, StyleSheet, Image, TouchableHighlight } from "react-native";
 import Swipeable from "react-native-gesture-handler/Swipeable";
 
 import colors from "../app/config/color";
-import { render } from "react-dom";
 
 function ListItem({
   title,
@@ -22,7 +21,7 @@ function ListItem({
           {image && <Image style={styles.image} source={image} />}
           <View style={styles.detailsContainer}>
             <Apptext style={styles.title}>{title}</Apptext>
-           {subTitle && <Apptext style={styles.subTitle}>{subTitle}</Apptext>}
+            {subTitle && <Apptext style={styles.subTitle}>{subTitle}</Apptext>}
           </View>
         </View>
       </TouchableHighlight>
@@ -37,7 +36,7 @@ const styles = StyleSheet.create({
   },
   detailsContainer: {
     marginLeft: 10,
-    justifyContent: "center"
+    justifyContent: "center",
   },
   image: {
     width: 70,
