@@ -10,9 +10,10 @@ import Screen from "./componenets/Screen";
 import Icon from "./componenets/Icon";
 import ListItem from "./componenets/ListItem";
 import AccountScreen from "./app/screens/AccountScreen";
+import ListingsScreen from "./app/screens/ListingsScreen";
 
 export default function App() {
   return (
-    <AccountScreen/>
+    <ListingsScreen/>
   );
 }
