@@ -12,6 +12,7 @@ import ListItem from "./componenets/ListItem";
 import AccountScreen from "./app/screens/AccountScreen";
 import ListingsScreen from "./app/screens/ListingsScreen";
 import AppTextInput from "./componenets/AppTextInput";
+import AppPicker from "./componenets/AppPicker";
 
 export default function App() {
 
@@ -19,10 +20,8 @@ export default function App() {
 
   return (
     <Screen>
-      <AppTextInput 
-      placeholder="Username"
-      icon ="email"
-      />
+      <AppPicker icon="apps" placeholder="Category" />
+      <AppTextInput icon="email" placeholder="Email" />
     </Screen>
   );
 }
